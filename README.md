@@ -30,13 +30,11 @@ Installation
 
 1.  Clone the repository:
     
-    bashCopy code
     
     `git clone https://github.com/your-username/smart-monitoring-system.git cd smart-monitoring-system`
     
 2.  Install the required dependencies:
     
-    bashCopy code
     
     `pip install -r requirements.txt`
     
@@ -46,8 +44,7 @@ Usage
 
 1.  Run the main application:
     
-    bashCopy code
-    
+
     `python main.py -n normal -s 416 -c 0.1 -nh 4`
     
     Replace the arguments (`-n`, `-s`, `-c`, `-nh`) with your preferred configuration.
