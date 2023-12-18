@@ -64,7 +64,8 @@ Contributing
 4.  Push to the branch: `git push origin feature/new-feature`.
 5.  Submit a pull request.
 
-License
--------
 
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+Contributions are welcome! Special thanks to:
+------------
+
+- [@mehmetanil10](https://github.com/mehmetanil10) - Bug fixes
