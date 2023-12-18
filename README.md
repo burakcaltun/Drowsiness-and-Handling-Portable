@@ -1,61 +1,70 @@
-Real-Time Monitoring System for Drowsiness and Hand-in-Warning-Area Detection
-This repository contains a real-time monitoring system that uses computer vision techniques to detect drowsiness and hands entering a warning area. The system utilizes YOLO (You Only Look Once) for hand detection and Dlib for facial landmark detection to monitor eye movements for drowsiness detection.
+Smart Monitoring System
+=======================
+
+[![License](https://img.shields.io/badge/license-MIT-blue.svg)](https://opensource.org/licenses/MIT)
+
+Overview
+--------
+
+This repository contains a Smart Monitoring System that uses computer vision techniques to detect drowsiness and hand positions in real-time. It integrates YOLO (You Only Look Once) for object detection and Dlib for facial landmark detection to achieve these functionalities.
+
+Features
+--------
+
+*   Drowsiness detection based on eye aspect ratio.
+*   Hand position detection using YOLO.
+*   Real-time video monitoring.
+*   Warning area visualization and alert system.
 
 Prerequisites
-Python 3.x
-OpenCV
-Pygame
-Dlib
-Numpy
-Scipy
-cvzone
-Imutils
-Getting Started
-Clone the repository:
+-------------
 
-bash
-Copy code
-git clone https://github.com/your-username/real-time-monitoring.git
-cd real-time-monitoring
-Install the required dependencies:
+*   Python 3.x
+*   OpenCV
+*   Dlib
+*   Pygame
+*   Cvzone
 
-bash
-Copy code
-pip install -r requirements.txt
-Download the YOLO weights and configuration files. You can find the necessary files here.
+Installation
+------------
 
-Run the monitoring system:
+1.  Clone the repository:
+    
+    bashCopy code
+    
+    `git clone https://github.com/your-username/smart-monitoring-system.git cd smart-monitoring-system`
+    
+2.  Install the required dependencies:
+    
+    bashCopy code
+    
+    `pip install -r requirements.txt`
+    
 
-bash
-Copy code
-python monitoring_system.py -n normal -s 416 -c 0.1 -nh 4
 Usage
-The system uses YOLO for hand detection. You can choose different YOLO configurations using the -n option (normal, tiny, prn, v4-tiny).
+-----
 
-Adjust the confidence level with the -c option.
+1.  Run the main application:
+    
+    bashCopy code
+    
+    `python main.py -n normal -s 416 -c 0.1 -nh 4`
+    
+    Replace the arguments (`-n`, `-s`, `-c`, `-nh`) with your preferred configuration.
+    
+2.  Follow the on-screen instructions to set up the warning areas by running the `warning_area_setup.py` script.
+    
 
-Specify the size of the hands to be detected using the -s option.
+Contributing
+------------
 
-Set the number of hands to be monitored with the -nh option.
-
-Hand Warning Area Configuration
-Run the warning_area_config.py script to configure the warning area.
-
-bash
-Copy code
-python warning_area_config.py
-Left-click on the image to add warning areas. Right-click to remove a warning area.
-
-Press the 'ESC' key to exit the configuration.
+1.  Fork the repository.
+2.  Create a new branch: `git checkout -b feature/new-feature`.
+3.  Make your changes and commit them: `git commit -am 'Add new feature'`.
+4.  Push to the branch: `git push origin feature/new-feature`.
+5.  Submit a pull request.
 
 License
-This project is licensed under the MIT License - see the LICENSE file for details.
+-------
 
-Acknowledgments
-YOLO (You Only Look Once) - Link
-Dlib - Link
-cvzone - Link
-Authors
-[Your Name]
-Contributing
-Feel free to open issues and pull requests!
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
